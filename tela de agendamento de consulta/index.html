@@ -1,0 +1,61 @@
+<!-- 
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Pedro Wilson Rodrigues de Lima 
+DATA 27/03/2023
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Agendamento de Consulta</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Agendamento de Consulta</h1>
+	<form>
+		<label for="data">Data:</label>
+		<input type="date" id="data" name="data" required><br><br>
+
+		<label for="horario">Horário:</label>
+		<select id="horario" name="horario" required>
+			<option value="">Selecione um horário</option>
+			<option value="08:00">08:00</option>
+			<option value="09:00">09:00</option>
+			<option value="10:00">10:00</option>
+			<option value="11:00">11:00</option>
+			<option value="13:00">13:00</option>
+			<option value="14:00">14:00</option>
+			<option value="15:00">15:00</option>
+			<option value="16:00">16:00</option>
+			<option value="17:00">17:00</option>
+			<option value="18:00">18:00</option>
+			<option value="19:00">19:00</option>
+			<option value="20:00">20:00</option>
+		</select><br><br>
+
+		<label for="medico">Médico:</label>
+		<select id="medico" name="medico" required>
+			<option value="">Selecione um médico</option>
+			<option value="Dr. Felipe">Dr. Felipe</option>
+			<option value="Dra. Ana">Dra. Ana</option>
+			<option value="Dr. Pedro">Dr. Pedro</option>
+			<option value="Dra. Isabela">Dra. Isabela</option>
+		</select><br><br>
+
+		<label for="tipoConsulta">Tipo de consulta:</label>
+		<select id="tipoConsulta" name="tipoConsulta" required>
+			<option value="">Selecione o tipo de consulta</option>
+			<option value="Clínica Geral">Clínica Geral</option>
+			<option value="Cardiologia">Cardiologia</option>
+			<option value="Dermatologia">Dermatologia</option>
+			<option value="Oftalmologia">Oftalmologia</option>
+			<option value="Ortopedia">Ortopedia</option>
+			<option value="Psicologia">Psicologia</option>
+		</select><br><br>
+
+		<input type="submit" value="Agendar">
+	</form>
+</body>
+</html>

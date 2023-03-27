@@ -1,0 +1,87 @@
+<!-- 
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Pedro Wilson Rodrigues de Lima 
+DATA 27/03/2023
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Consulta de Consultas</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Consulta de Consultas</h1>
+
+	<form>
+		<label for="filtro">Filtrar por Paciente ou Médico:</label>
+		<input type="text" id="filtro" name="filtro"><br><br>
+
+		<label for="dataInicio">De:</label>
+		<input type="date" id="dataInicio" name="dataInicio">
+		
+		<label for="dataFim">Até:</label>
+		<input type="date" id="dataFim" name="dataFim"><br><br>
+
+		<label for="tipoConsulta">Tipo de Consulta:</label>
+		<select id="tipoConsulta" name="tipoConsulta">
+			<option value="">Selecione o tipo de consulta</option>
+			<option value="clinica">Clínica Geral</option>
+			<option value="pediatria">Pediatria</option>
+			<option value="dermatologia">Dermatologia</option>
+			<option value="ginecologia">Ginecologia</option>
+			<option value="oftalmologia">Oftalmologia</option>
+		</select>
+
+		<label for="medico">Médico:</label>
+		<select id="medico" name="medico">
+			<option value="">Selecione o médico</option>
+			<option value="dr1">Dr. João Silva</option>
+			<option value="dr2">Dr. Maria Souza</option>
+			<option value="dr3">Dr. José Santos</option>
+			<option value="dr4">Dra. Ana Oliveira</option>
+		</select>
+
+		<input type="submit" value="Filtrar">
+	</form>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Paciente</th>
+				<th>Médico</th>
+				<th>Data</th>
+				<th>Hora</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>João da Silva</td>
+				<td>Dr. João Silva</td>
+				<td>10/05/2023</td>
+				<td>14:30</td>
+			</tr>
+			<tr>
+				<td>Maria Souza</td>
+				<td>Dr. Maria Souza</td>
+				<td>15/05/2023</td>
+				<td>9:00</td>
+			</tr>
+			<tr>
+				<td>José Santos</td>
+				<td>Dr. José Santos</td>
+				<td>20/05/2023</td>
+				<td>16:00</td>
+			</tr>
+			<tr>
+				<td>Ana Oliveira</td>
+				<td>Dra. Ana Oliveira</td>
+				<td>25/05/2023</td>
+				<td>10:30</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!-- 
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Pedro Wilson Rodrigues de Lima 
+DATA 27/03/2023
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Consulta de Pacientes</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Consulta de Pacientes</h1>
+		<div class="search">
+			<label for="search">Buscar por nome ou CPF:</label>
+			<input type="text" id="search" name="search">
+			<button id="search-btn">Buscar</button>
+		</div>
+		<div class="filters">
+			<label for="medico">Médico:</label>
+			<select id="medico" name="medico">
+				<option value="">Todos</option>
+				<option value="Dr. Fulano">Dr. Fulano</option>
+				<option value="Dra. Ciclana">Dra. Ciclana</option>
+				<option value="Dr. Beltrano">Dr. Beltrano</option>
+			</select>
+
+			<label for="consulta">Tipo de consulta:</label>
+			<select id="consulta" name="consulta">
+				<option value="">Todas</option>
+				<option value="Cardiologia">Cardiologia</option>
+				<option value="Dermatologia">Dermatologia</option>
+				<option value="Pediatria">Pediatria</option>
+			</select>
+		</div>
+		<table id="pacientes">
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th>Data de Nascimento</th>
+					<th>CPF</th>
+					<th>Médico Responsável</th>
+					<th>Tipo de Consulta</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Pedro Wilson</td>
+					<td>01/01/1980</td>
+					<td>123.456.789-00</td>
+					<td>Dr. Felipe</td>
+					<td>Cardiologia</td>
+				</tr>
+				<tr>
+					<td>Isabela do Carmo</td>
+					<td>10/05/1990</td>
+					<td>987.654.321-00</td>
+					<td>Dra. Ana</td>
+					<td>Dermatologia</td>
+				</tr>
+				<tr>
+					<td>Lucas Lima</td>
+					<td>15/08/2005</td>
+					<td>111.222.333-44</td>
+					<td>Dr. Pedro</td>
+					<td>Pediatria</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
